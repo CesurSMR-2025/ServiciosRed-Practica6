@@ -217,9 +217,15 @@ SELECT columna1 AS alias_columna1, columna2 AS alias_columna2, ...
 FROM nombre_tabla AS alias_tabla;
 ```
 
-### JOIN
-
 ### COUNT
+COUNT es una función de agregación en SQL que se utiliza para contar el número de filas que cumplen una condición específica en una consulta. La sintaxis básica es:
+```sql
+SELECT COUNT(columna)
+FROM nombre_tabla
+WHERE condicion;
+```
+
+### JOIN
 
 ### GROUP BY y HAVING
 
@@ -483,7 +489,7 @@ Una vez creadas y rellenadas las tablas, debereis realizar las siguientes consul
 - Mostrar la estructura de la tabla `usuarios`.
 - Listar todos los libros disponibles en la biblioteca. (mostrar título y autor)
 - Listar todos los usuarios registrados en la biblioteca. (mostrar nombre y email)
-- Listar todos los autores y sus fechas de nacimiento.
+- Listar todos los autores y sus fechas de nacimiento. (mostrar nombre y fecha de nacimiento)
 - Contar el número total de libros en la biblioteca.
 - Listar los libros publicados después del año 2000.
 - Mostrar todos los préstamos realizados, incluyendo el nombre del usuario y el título del libro prestado.
