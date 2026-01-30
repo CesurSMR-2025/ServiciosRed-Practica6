@@ -486,6 +486,6 @@ Una vez creadas y rellenadas las tablas, debereis realizar las siguientes consul
 ### Entrega
 Para le entrega me tendreis que enviar un documento PDF con las siguientes capturas de pantalla:
 - Captura de pantalla abriendo el cliente CLI de MariaDB en la máquina servidorBBDD.
-- Captura de pantalla abriendo PhpMyAdmin en el navegador web de la máquina host.
+- Captura de pantalla abriendo PhpMyAdmin en el navegador web de la máquina host. (Se tiene que ver la URL)
 - Captura de pantalla de PhpMyAdmin mostrando la base de datos `Biblioteca` y sus tablas.
 - Captura de pantalla de las consultas de lectura SQL realizadas en el apartado anterior + Captura de pantalla de los resultados obtenidos.
