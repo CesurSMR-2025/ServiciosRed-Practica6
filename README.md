@@ -1,4 +1,4 @@
-# Servicios en Red - Práctica 4: Base de Datos
+# Servicios en Red - Práctica 6: Base de Datos
 En esta práctica, desplegaremos una base de datos MariaDB (que es un fork de MySQL) en una máquina virtual. Accederemos a esta base de datos desde otra máquina virtual y desde nuestra máquina host, utilizando tanto una interfaz gráfica, también conocida como GUI (Graphical User Interface), como una interfaz de línea de comandos (CLI, Command Line Interface).
 
 ## Bases de Datos
@@ -488,8 +488,8 @@ Una vez creadas y rellenadas las tablas, debereis realizar las siguientes consul
 ### Entrega
 Para le entrega me tendreis que enviar un documento PDF con las siguientes capturas de pantalla:
 - Captura de pantalla abriendo el cliente CLI de MariaDB en la máquina servidorBBDD.
-- Captura de pantalla abriendo PhpMyAdmin en el navegador web de la máquina host.
+- Captura de pantalla abriendo PhpMyAdmin en el navegador web de la máquina host. (Se tiene que ver la URL)
 - Captura de pantalla de PhpMyAdmin mostrando la base de datos `Biblioteca` y sus tablas.
-- Captura de pantalla de las consultas de lectura SQL realizadas + Captura de pantalla de los resultados obtenidos.
+- Captura de pantalla de las consultas de lectura SQL realizadas en el apartado anterior + Captura de pantalla de los resultados obtenidos.
 
 Nota: Recomiendo hacer la práctica utilizando en su mayoría en cliente CLI de MariaDB, ya que es la forma mas habitual de trabajar con bases de datos. Ademas si cambias de cliente GUI, los comandos SQL son los mismos.
