@@ -82,6 +82,8 @@ CREATE TABLE nombre_tabla (
 **Nota**: Que "modificadores" este entre corchetes significa que es opcional, no que se deben escribir los corchetes.
 
 ### Tipos de Dato
+Algunos de los tipos de datos más comunes en SQL son:
+
 - `INT`: Entero.
 - `VARCHAR(n)`: Cadena de caracteres de longitud variable, donde `n` es la longitud máxima.
 - `CHAR(n)`: Cadena de caracteres de longitud fija, donde `n` es la longitud.
@@ -92,13 +94,14 @@ CREATE TABLE nombre_tabla (
 - `BOOLEAN`: Valor booleano (TRUE o FALSE).
 
 ### Modificadores 
+
 - `NOT NULL`: La columna no puede contener valores nulos.
 - `UNIQUE`: Los valores en la columna deben ser únicos.
 - `PRIMARY KEY`: Define la columna como clave primaria de la tabla, lo que significa que los valores en esta columna deben ser únicos y no nulos.
 - `AUTO_INCREMENT`: La columna se incrementa automáticamente con cada nuevo registro insertado. Solo se puede utilizar en columnas de tipo entero que sean claves primarias.
 - `DEFAULT valor`: Establece un valor predeterminado para la columna si no se proporciona ningún valor al insertar un nuevo registro.
 - `CHECK (condición)`: Establece una condición que los valores de la columna deben cumplir.
-- `FOREIGN KEY (columna) REFERENCES tabla(columna)`: Define una clave foránea que establece una relación entre la columna de la tabla actual y una columna en otra tabla.
+- `FOREIGN KEY (columna) REFERENCES tabla(columna)`: Define una clave ajena que establece una relación entre la columna de la tabla actual y una columna en otra tabla.
 - `VIRTUAL`: Define una columna virtual cuyo valor se calcula a partir de otras columnas en la misma tabla.
 
 **Nota Importante**: Al campo con modificador `AUTO_INCREMENT` no se le debe asignar ningún valor al insertar un nuevo registro, ya que el valor se genera automáticamente.
@@ -492,4 +495,4 @@ Para le entrega me tendreis que enviar un documento PDF con las siguientes captu
 - Captura de pantalla de PhpMyAdmin mostrando la base de datos `Biblioteca` y sus tablas.
 - Captura de pantalla de las consultas de lectura SQL realizadas en el apartado anterior + Captura de pantalla de los resultados obtenidos.
 
-Nota: Recomiendo hacer la práctica utilizando en su mayoría en cliente CLI de MariaDB, ya que es la forma mas habitual de trabajar con bases de datos. Ademas si cambias de cliente GUI, los comandos SQL son los mismos.
+**Nota importante**: Recomiendo hacer la práctica utilizando en su mayoría en cliente CLI de MariaDB, ya que es la forma mas habitual de trabajar con bases de datos. Ademas si cambias de cliente GUI, los comandos SQL son los mismos.
