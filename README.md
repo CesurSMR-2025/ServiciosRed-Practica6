@@ -492,4 +492,4 @@ Para le entrega me tendreis que enviar un documento PDF con las siguientes captu
 - Captura de pantalla de PhpMyAdmin mostrando la base de datos `Biblioteca` y sus tablas.
 - Captura de pantalla de las consultas de lectura SQL realizadas + Captura de pantalla de los resultados obtenidos.
 
-Nota: Recomiendo hacer la práctica utilizando en su mayoría en cliente CLI de MariaDB, ya que es la forma mas habitual de trabajar con bases de datos. Ademas si cambias de cliente (por ejemplo a PgAdmin para PostgreSQL) o si trabajas en un entorno sin interfaz gráfica (por ejemplo un servidor remoto) no podrás utilizar PhpMyAdmin.
+Nota: Recomiendo hacer la práctica utilizando en su mayoría en cliente CLI de MariaDB, ya que es la forma mas habitual de trabajar con bases de datos. Ademas si cambias de cliente GUI, los comandos SQL son los mismos.
