@@ -1,4 +1,4 @@
-# Servicios en Red - Práctica 4: Base de Datos
+# Servicios en Red - Práctica 6: Base de Datos
 En esta práctica, desplegaremos una base de datos MariaDB (que es un fork de MySQL) en una máquina virtual. Accederemos a esta base de datos desde otra máquina virtual y desde nuestra máquina host, utilizando tanto una interfaz gráfica, también conocida como GUI (Graphical User Interface), como una interfaz de línea de comandos (CLI, Command Line Interface).
 
 ## Bases de Datos
