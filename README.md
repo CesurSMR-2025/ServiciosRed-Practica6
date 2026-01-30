@@ -430,7 +430,7 @@ PhpoMyAdmin ya debería estar accesible desde un navegador web en la siguiente U
 ### Creación del Usuario de la Base de Datos
 Para acceder a la base de datos MariaDB desde PhpMyAdmin y desde el cliente CLI en la máquina clienteBBDD, crearemos un usuario con nuestro nombre y contraseña. Despues le daremos permisos para que pueda gestionar bases de datos y tablas.
 
-- Acceder al cliente CLI de MariaDB como usuario root:
+- Acceder al cliente CLI de MariaDB como usuario root desde la máquina servidorBBDD:
   ```bash
   sudo mariadb
   ```
@@ -451,6 +451,17 @@ Para acceder a la base de datos MariaDB desde PhpMyAdmin y desde el cliente CLI 
 ```sql
   EXIT;
 ```
+
+### Acceso con PhpMyAdmin
+Para acceder a PhpMyAdmin, abrimos un navegador web en la máquina host y accedemos a la siguiente URL: `http://<IP_servidorBBDD>/phpmyadmin`, donde `<IP_servidorBBDD>` es la dirección IP del Adaptador Solo Anfitrión de la máquina servidorBBDD.
+
+### Acceso con el Cliente CLI
+Para acceder al cliente CLI de MariaDB desde la máquina clienteBBDD, utilizamos el siguiente comando (cambiando `tu_usuario` y `tu_contraseña` por el usuario y contraseña que hemos creado anteriormente, y `<IP_servidorBBDD>` por la dirección IP de la máquina servidorBBDD en la Red Interna):
+
+```bash
+mariadb -h <IP_servidorBBDD> -u tu_usuario -p
+```
+
 
 ### Creación de la Base de Datos y Tablas
 Para esta práctica, debereis crear una base de datos llamada `Biblioteca` con 4 tablas: `usuarios`, `libros`, `prestamos` y `autores`.
