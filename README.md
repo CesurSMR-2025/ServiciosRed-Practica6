@@ -101,6 +101,8 @@ CREATE TABLE nombre_tabla (
 - `FOREIGN KEY (columna) REFERENCES tabla(columna)`: Define una clave foránea que establece una relación entre la columna de la tabla actual y una columna en otra tabla.
 - `VIRTUAL`: Define una columna virtual cuyo valor se calcula a partir de otras columnas en la misma tabla.
 
+**Nota Importante**: Al campo con modificador `AUTO_INCREMENT` no se le debe asignar ningún valor al insertar un nuevo registro, ya que el valor se genera automáticamente.
+
 ### DROP TABLE
 La sentencia `DROP TABLE` en SQL se utiliza para eliminar una tabla existente de una base de datos. La sintaxis básica es `DROP TABLE nombre_tabla;`. Esto elimina la tabla y todos los datos almacenados en ella de forma permanente.
 
@@ -116,7 +118,7 @@ Se pueden insertar múltiples filas en una sola sentencia separando cada conjunt
 INSERT INTO nombre_tabla (columna1, columna2, ...)
 VALUES (valor1a, valor2a, ...),
 (valor1b, valor2b, ...),
-...;
+...
 ```
 
 Normalmente los datos los introducen programas o aplicaciones que ejecutan consultas SQL de forma automática, no los introduce un usuario de forma manual.
@@ -489,3 +491,5 @@ Para le entrega me tendreis que enviar un documento PDF con las siguientes captu
 - Captura de pantalla abriendo PhpMyAdmin en el navegador web de la máquina host.
 - Captura de pantalla de PhpMyAdmin mostrando la base de datos `Biblioteca` y sus tablas.
 - Captura de pantalla de las consultas de lectura SQL realizadas + Captura de pantalla de los resultados obtenidos.
+
+Nota: Recomiendo hacer la práctica utilizando en su mayoría en cliente CLI de MariaDB, ya que es la forma mas habitual de trabajar con bases de datos. Ademas si cambias de cliente (por ejemplo a PgAdmin para PostgreSQL) o si trabajas en un entorno sin interfaz gráfica (por ejemplo un servidor remoto) no podrás utilizar PhpMyAdmin.
